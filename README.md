@@ -6,9 +6,9 @@ Przy tworzeniu projektu trzeba wybrać:
 
 W dependencies:
 * Lombok (Developer Tools)
-* MS SQL Server Driver
+* MS SQL Server Driver (SQL)
 * JDBC API (SQL)
-* Spring Web (trzeba usunac -web w pom.xml
+* Spring Web (trzeba usunac -web w pom.xml) (Web)
 
 Aby uruchomić projekt trzeba zmienić w:
 ```Java
