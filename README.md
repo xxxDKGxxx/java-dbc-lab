@@ -1,14 +1,32 @@
 # Gotowy projekt z Labów z Javy
 
 Przy tworzeniu projektu trzeba wybrać:
-* Type: Maven
-* Odpowiednie JDK i Java
-
-W dependencies:
-* Lombok (Developer Tools)
-* MS SQL Server Driver (SQL)
-* JDBC API (SQL)
-* Spring Web (trzeba usunac -web w pom.xml) (Web)
+1. create new project
+2. spring boot
+3. lang: java; type: maven
+4. group: pl.wrona.northwind
+5. artifact: customer-validator
+6. pl.wrona.northwind.customervalidator
+7. jdk: termurin-17; java: 17
+8. next
+9.  developer tools -> lombok
+10. sql -> jdbc api
+11. sql -> ms sql server driver (postgreSQL is case of )
+12. web -> spring web
+    project created
+12. modify pom.xml: spring-boot-starter-web -> spring-boot-starter
+13. add to pom.xml:
+    <dependency>
+        <groupId>com.zaxxer</groupId>
+        <artifactId>HikariCP</artifactId>
+        <version>6.3.0</version>
+    </dependency>
+14. check whether project compiles (mvn clean install); if not then ¯\_(ツ)_/¯
+15. database -> plusik -> data source -> ms sql
+16. user & password same as in ms sql server management studio(u: sa, p: SAstudent1); instance same as in sql server studio (DESKTOP-BK5VIEE); host: localhost; port: 1433 (eventually 1434);
+17. add to url: ';database=NORTHWND'
+    database visible in database section
+17. test
 
 Aby uruchomić projekt trzeba zmienić w:
 ```Java
