@@ -1,5 +1,15 @@
 # Gotowy projekt z Labów z Javy
 
+Przy tworzeniu projektu trzeba wybrać:
+* Type: Maven
+* Odpowiednie JDK i Java
+
+W dependencies:
+* Lombok (Developer Tools)
+* MS SQL Server Driver
+* JDBC API (SQL)
+* Spring Web (trzeba usunac -web w pom.xml
+
 Aby uruchomić projekt trzeba zmienić w:
 ```Java
 public HikariConfig dataBaseConfig()
